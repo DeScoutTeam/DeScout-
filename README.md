@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+# 🛰️ Airdrop Alpha Scanner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered scanner for alpha hunters seeking early airdrop opportunities. Built with **React**, **Tailwind CSS**, **TypeScript**, **Phantom Wallet**, and **Ollama**.
 
-Currently, two official plugins are available:
+## 🧠 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This app continuously monitors:
+- 🐦 **Social media**
+- 🧪 **GitHub activity**
+- ⛓ **On-chain transactions**
+- 💬 **Discord communities**
 
-## Expanding the ESLint configuration
+to detect **early signals** of upcoming airdrops. Projects are **ranked** based on:
+- 📈 Airdrop probability
+- ⏳ Deadlines
+- ✅ Action requirements (e.g. join Discord, mint NFT, use testnet)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+You can **filter** results by:
+- Blockchain (e.g., Ethereum, Solana, Layer 2s)
+- Wallet types (e.g., MetaMask, Phantom)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+A **DAO community** can:
+- Share hidden/private airdrops
+- Earn tokens or access in return
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Tech Stack
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **React** – UI Library
+- **Tailwind CSS** – Utility-first styling
+- **TypeScript** – Type-safe JavaScript
+- **Phantom Wallet** – Solana wallet integration
+- **Ollama** – AI model interface for signal processing and ranking logic
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/yourusername/airdrop-alpha-scanner.git
+cd airdrop-alpha-scanner
+npm install
+npm run dev
