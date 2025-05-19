@@ -1,0 +1,17 @@
+[package]
+name = "deepness_level_2"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+headless_chrome = "1.0"
+mongodb = { version = "2.0", features = ["tokio-runtime"] }
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0"
+log = "0.4"
+env_logger = "0.9"
+scraper = "0.14"
+chrono = { version = "0.4", features = ["serde"] }
+async-trait = "0.1.88"
+serde_json = "1.0"
